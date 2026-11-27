@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Real Time Image Identification App</title><link rel="stylesheet" href="./camera.css">
+</head><body>
+<header><h1>Real Time Image Identification App</h1><p>SqueezeNet 1.1 · On-device recognition</p></header>
+<main>
+<div class="actions"><button id="start" disabled>Start camera</button><label for="file">Choose a photo</label><input type="file" id="file" accept="image/*" disabled></div>
+<p id="status" role="status">Loading app controls… If this stays on screen, check that camera-app.js is published beside index.html.</p>
+<video id="camera" autoplay muted playsinline hidden></video><img id="photo" alt="Selected photo" hidden>
+<dl><div><dt>Object</dt><dd id="object">—</dd></div><div><dt>Confidence</dt><dd id="confidence">—</dd></div></dl>
+</main><footer>© A.G 2023<br><i>“I like mangoes lol” – Also Me, 2023</i></footer>
+<script src="./camera-app.js"></script></body></html>
